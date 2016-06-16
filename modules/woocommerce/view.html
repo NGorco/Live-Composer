@@ -10,10 +10,10 @@ return __p;}%>
 			<% if(post_elements.value.indexOf('price_2') > -1){%>
 				<span class="dslc-product-price-secondary" data-module-method="sec_price">
 					<del>
-						<span class="amount">£11,111.00</span>
+						<span class="amount">£145.00</span>
 					</del>
 					<ins>
-						<span class="amount">£55.00</span>
+						<span class="amount">£100.00</span>
 					</ins>
 				</span>
 			<%}%>
@@ -139,7 +139,7 @@ if(elements.value.indexOf('main_heading') > -1 || show_filters || show_carousel_
 								</div>
 
 								<div class="dslc-display-inline" data-module-method="post_price">
-									<a href="#" class="dslc-product-price dslc-init-square dslc-center-elem">
+									<a href="#" class="dslc-product-price dslc-init-<%= price_pos.value || price_pos.std %>">
 										<span class="dslc-product-price-bg"></span>
 										<span class="dslc-product-price-main">
 											<del>

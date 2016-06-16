@@ -2430,7 +2430,7 @@ class DSLC_WooCommerce_Products extends DSLC_Module {
 		global $product;
 		ob_start();
 		?>
-		<a href="<?php echo do_shortcode( '[add_to_cart_url id="' . get_the_ID() . '"]' ); ?>" class="dslc-product-price dslc-init-square dslc-init-<?php echo $options['price_pos']; ?>">
+		<a href="<?php echo do_shortcode( '[add_to_cart_url id="' . get_the_ID() . '"]' ); ?>" class="dslc-product-price dslc-init-<?php echo $options['price_pos']; ?>">
 			<span class="dslc-product-price-bg"></span>
 			<span class="dslc-product-price-main">
 				<?php echo $product->get_price_html(); ?>

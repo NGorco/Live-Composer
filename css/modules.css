@@ -1353,7 +1353,7 @@
 					}
 
 					#dslc-content .dslc-product-thumb .dslc-product-price del {
-						display: none;
+						display: block;
 					}
 
 					#dslc-content .dslc-product-thumb .dslc-product-price ins {
@@ -1381,8 +1381,11 @@
 					opacity: 1 !important;
 				}
 
-				#dslc-content .dslc-products .dslc-product-thumb .dslc-product-main .dslc-init-center {
-					position: relative;
+				#dslc-content .dslc-products .dslc-product-thumb .dslc-init-center {
+					top: 50%;
+				    left: 50%;
+				    visibility: visible;
+				    transform: translate(-50%, -50%);
 				}
 
 				#dslc-content .dslc-products .dslc-product-thumb:hover .dslc-product-main {
