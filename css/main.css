@@ -653,6 +653,7 @@ body.rtl .dslc-last-col {
 .dslc-post-filters {
 	overflow: hidden;
 	font-size: 0;
+	display: inline-block;
 }
 
 	.dslc-post-filter {

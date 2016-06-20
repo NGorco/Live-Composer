@@ -539,10 +539,10 @@ class DSLC_Module{
 			array(
 				'label' => 'Margin Bottom',
 				'id' => 'css_filter_margin_bottom',
-				'std' => '20',
+				'std' => '15',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-post-filters',
+				'affect_on_change_el' => '.dslc-post-filter',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'styling',
 				'tab' => 'Filters',
@@ -602,12 +602,12 @@ class DSLC_Module{
 				'tab' => 'tablet'
 			),
 			array(
-				'label' => 'Filters - Margin Bottom',
+				'label' => 'Filter - Margin Bottom',
 				'id' => 'css_res_t_filter_margin_bottom',
-				'std' => '20',
+				'std' => '10',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-post-filters',
+				'affect_on_change_el' => '.dslc-post-filter',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'responsive',
 				'tab' => 'tablet',
@@ -618,7 +618,7 @@ class DSLC_Module{
 			 * Responsive Phone
 			 */
 
-					array(
+			array(
 				'label' => 'Filters - Font Size',
 				'id' => 'css_res_p_filter_font_size',
 				'std' => '11',
@@ -668,17 +668,16 @@ class DSLC_Module{
 			),
 			array(
 				'label' => 'Filters - Margin Bottom',
-				'id' => 'css_res_p_filter_margin_bottom',
-				'std' => '20',
+				'id' => 'css_res_p_filters_margin_bottom',
+				'std' => '15',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-post-filters',
+				'affect_on_change_el' => '.dslc-post-filter',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'responsive',
 				'tab' => 'phone',
 				'ext' => 'px'
 			),
-
 		);
 
 		/**
@@ -913,14 +912,26 @@ class DSLC_Module{
 			array(
 				'label' => 'Margin Bottom',
 				'id' => 'css_heading_margin_bottom',
-				'std' => '20',
+				'std' => '0',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-module-heading h2',
+				'affect_on_change_el' => '.dslc-module-heading',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'styling',
 				'tab' => 'Heading',
 				'ext' => 'px'
+			),
+			array(
+				'label' => 'Padding Horizontal',
+				'id' => 'css_heading_padding_horizontal',
+				'std' => '0',
+				'type' => 'slider',
+				'refresh_on_change' => false,
+				'affect_on_change_el' => '.dslc-module-heading',
+				'affect_on_change_rule' => 'padding-left,padding-right',
+				'section' => 'styling',
+				'ext' => 'px',
+				'tab' => 'Heading'
 			),
 
 			/**
@@ -978,14 +989,26 @@ class DSLC_Module{
 			array(
 				'label' => 'Heading - Margin Bottom',
 				'id' => 'css_res_t_heading_margin_bottom',
-				'std' => '20',
+				'std' => '0',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-module-heading h2',
+				'affect_on_change_el' => '.dslc-module-heading',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'responsive',
 				'tab' => 'tablet',
 				'ext' => 'px'
+			),
+			array(
+				'label' => 'Heading - Padding Horizontal',
+				'id' => 'css_res_t_heading_padding_horizontal',
+				'std' => '0',
+				'type' => 'slider',
+				'refresh_on_change' => false,
+				'affect_on_change_el' => '.dslc-module-heading',
+				'affect_on_change_rule' => 'padding-left,padding-right',
+				'section' => 'responsive',
+				'ext' => 'px',
+				'tab' => 'tablet'
 			),
 
 			/**
@@ -1043,14 +1066,26 @@ class DSLC_Module{
 			array(
 				'label' => 'Heading - Margin Bottom',
 				'id' => 'css_res_p_heading_margin_bottom',
-				'std' => '20',
+				'std' => '0',
 				'type' => 'slider',
 				'refresh_on_change' => false,
-				'affect_on_change_el' => '.dslc-module-heading h2',
+				'affect_on_change_el' => '.dslc-module-heading',
 				'affect_on_change_rule' => 'margin-bottom',
 				'section' => 'responsive',
 				'tab' => 'phone',
 				'ext' => 'px'
+			),
+			array(
+				'label' => 'Heading - Padding Horizontal',
+				'id' => 'css_res_p_heading_padding_horizontal',
+				'std' => '0',
+				'type' => 'slider',
+				'refresh_on_change' => false,
+				'affect_on_change_el' => '.dslc-module-heading',
+				'affect_on_change_rule' => 'padding-left,padding-right',
+				'section' => 'responsive',
+				'ext' => 'px',
+				'tab' => 'phone'
 			),
 
 		);
