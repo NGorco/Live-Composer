@@ -4395,6 +4395,16 @@ var dslcDebug = false;
 		 * Hook - Tab Switch
 		 */
 
+		$(window).resize(function(){
+
+			var jsp = jQuery('.dslca-module-edit-options-inner').data('jsp');
+
+			if(jsp){
+			   	jsp.reinitialise();
+			   	jsp.scrollToX(0);
+			}
+		});
+
 		$(document).on('click', '.dslca-module-edit-options-tab-hook', function(){
 
 			if(dslcDebug){

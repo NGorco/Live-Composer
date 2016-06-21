@@ -14,7 +14,7 @@
 
 		$('.dslc-notification-box-has-timeout').each(function(){
 
-			var nBox = $(this);
+			var nBox = $(this),
 			nTimeout = 'none',
 			moduleID = nBox.closest('.dslc-module-front').data('module-id'),
 			cookieID = 'nBox' + moduleID;
